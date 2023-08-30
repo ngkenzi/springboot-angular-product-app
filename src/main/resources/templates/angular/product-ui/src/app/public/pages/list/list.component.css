@@ -1,0 +1,27 @@
+.toolbar {
+  background-color: #212121;
+  color: azure;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.table {
+  width: 95%;
+  margin: auto;
+}
+
+.add-btn {
+  margin-top: 2%;
+}
+
+.paginator {
+  background-color: #f7f4f4;
+}
+
+.action-btns {
+  display: flex;
+  justify-content: space-between;
+}

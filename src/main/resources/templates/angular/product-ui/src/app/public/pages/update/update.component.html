@@ -1,0 +1,90 @@
+<main>
+  <mat-toolbar class="toolbar">
+    <span>Create Product</span>
+  </mat-toolbar>
+
+  <button
+    mat-raised-button
+    type="button"
+    (click)="onBack()"
+    class="back-btn"
+    color="primary"
+  >
+    Back to listing
+  </button>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form">
+    <p class="text">Input "NULL" for null value</p>
+
+    <section>
+      <div class="code-field" id="field">
+        <mat-label>Code:</mat-label>
+        <mat-form-field>
+          <input matInput placeholder="P123" formControlName="code" required />
+        </mat-form-field>
+      </div>
+
+      <div class="name-field" id="field">
+        <mat-label>Name:</mat-label>
+        <mat-form-field>
+          <input
+            matInput
+            placeholder="Red Dinner Gown"
+            formControlName="name"
+            required
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="category-field" id="field">
+        <mat-label>Category:</mat-label>
+        <mat-form-field>
+          <input
+            matInput
+            placeholder="Fashion"
+            formControlName="category"
+            required
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="brand-field" id="field">
+        <mat-label>Brand:</mat-label>
+        <mat-form-field>
+          <input
+            matInput
+            placeholder="No Brand"
+            formControlName="brand"
+            required
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="type-field" id="field">
+        <mat-label>Type:</mat-label>
+        <mat-form-field>
+          <input
+            matInput
+            placeholder="Women Dress"
+            formControlName="type"
+            required
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="description-field" id="field">
+        <mat-label>Description:</mat-label>
+        <mat-form-field>
+          <textarea
+            matInput
+            formControlName="description"
+            rows="4"
+            required
+          ></textarea>
+        </mat-form-field>
+      </div>
+    </section>
+
+    <button mat-raised-button color="primary" type="submit">Save</button>
+  </form>
+</main>
